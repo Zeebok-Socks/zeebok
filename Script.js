@@ -1,10 +1,14 @@
 // =======================
-// 1️⃣ Swiper Slider Init
+// 1️⃣ Swiper Slider Init with Autoplay
 // =======================
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
+    autoplay: {
+        delay: 2500,       // 2.5 seconds per slide
+        disableOnInteraction: false, // continue auto after manual swipe
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
