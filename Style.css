@@ -48,6 +48,12 @@ body {
 .nav-links a:hover {
     color: #ff6a00;
 }
+.logo-img {
+    height: 50px;       /* adjust size */
+    width: auto;
+    display: block;
+}
+
 
 /* Hero */
 .hero {
@@ -152,4 +158,11 @@ footer {
     .hero h1 {
         font-size: 32px;
     }
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+    }
+}
+
 }
