@@ -6,11 +6,11 @@
     <title>Zeebok – Comfort in Every Step</title>
     <link rel="stylesheet" href="style.css">
 
-<!-- Swiper CSS -->
-<link
-  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
@@ -31,8 +31,6 @@
     </div>
 </nav>
 
-
-
 <!-- Hero Section -->
 <header class="hero">
     <div class="container">
@@ -42,7 +40,7 @@
     </div>
 </header>
 
-<!-- About -->
+<!-- About Section -->
 <section id="about" class="section">
     <div class="container">
         <h2>Why Choose Zeebok?</h2>
@@ -53,45 +51,64 @@
     </div>
 </section>
 
-<!-- Products -->
+<!-- Products Section (Sliding) -->
 <section id="products" class="section light">
     <div class="container">
         <h2>Our Collection</h2>
-        <div class="products">
 
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300" alt="Sports Socks">
-                <h3>Sports Socks</h3>
-                <p>Perfect grip and sweat absorption for active lifestyles.</p>
-                <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
+        <!-- Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Product Slide -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300" alt="Sports Socks">
+                        <h3>Sports Socks</h3>
+                        <p>Perfect grip and sweat absorption for active lifestyles.</p>
+                        <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300" alt="Daily Cotton Socks">
+                        <h3>Daily Cotton Socks</h3>
+                        <p>Soft and breathable socks for everyday comfort.</p>
+                        <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300" alt="Formal Socks">
+                        <h3>Formal Socks</h3>
+                        <p>Elegant style with maximum comfort for office wear.</p>
+                        <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300" alt="Kids Socks">
+                        <h3>Kids Socks</h3>
+                        <p>Colorful, soft and durable for little feet.</p>
+                        <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Add more slides as needed -->
+
             </div>
 
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300" alt="Cotton Socks">
-                <h3>Daily Cotton Socks</h3>
-                <p>Soft and breathable socks for everyday comfort.</p>
-                <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
-            </div>
-
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300" alt="Formal Socks">
-                <h3>Formal Socks</h3>
-                <p>Elegant style with maximum comfort for office wear.</p>
-                <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
-            </div>
-
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300" alt="Kids Socks">
-                <h3>Kids Socks</h3>
-                <p>Colorful, soft and durable for little feet.</p>
-                <a href="https://www.amazon.in/YOUR_PRODUCT_LINK" target="_blank" class="btn-buy">Buy on Amazon</a>
-            </div>
-
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact" class="section">
     <div class="container">
         <h2>Contact Zeebok</h2>
@@ -101,14 +118,15 @@
     </div>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>© 2026 Zeebok. All Rights Reserved.</p>
 </footer>
 
-<script src="script.js"></script>
-
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
 <script>
   const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
