@@ -1,3 +1,4 @@
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -27,38 +28,26 @@ body {
     z-index: 1000;
 }
 
-/* Flex container for logo + nav links */
-./* Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    padding: 10px 20px;
-    z-index: 1000;
-}
-
-/* Flex container for logo + nav links */
 .nav-flex {
     display: flex;
-    justify-content: space-between; /* Logo left, links right */
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* allows wrapping on mobile */
+    flex-wrap: wrap;
 }
 
 /* Logo container */
 .logo-container {
     display: flex;
     align-items: center;
-    padding-right: 20px; /* optional spacing */
+    padding-right: 20px;
 }
 
 /* Logo image */
 .logo-img {
-    height: 60px;      /* Adjust for your navbar */
-    width: auto;       /* Keep original ratio */
+    height: 60px;
+    width: auto;
     display: block;
-    object-fit: contain; /* Prevent stretching */
+    object-fit: contain;
 }
 
 /* Navigation Links */
@@ -74,7 +63,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-    padding: 5px 10px; /* better click area */
+    padding: 5px 10px;
     transition: 0.3s;
 }
 
@@ -82,7 +71,7 @@ body {
     color: #ff6a00;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive Navbar */
 @media (max-width: 768px) {
     .nav-flex {
         flex-direction: column;
@@ -90,14 +79,11 @@ body {
     }
 
     .logo-img {
-        height: 50px;  /* Slightly smaller on mobile */
+        height: 50px;
     }
 }
 
-
-
-
-/* Hero */
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ff6a00, #ffb347);
     color: white;
@@ -142,19 +128,21 @@ h2 {
     font-size: 30px;
 }
 
-/* Products */
+/* Products Grid fallback (hidden when Swiper active) */
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
 }
 
+/* Product Card */
 .product-card {
     background: white;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 250px; /* uniform size */
 }
 
 .product-card:hover {
@@ -192,10 +180,6 @@ h2 {
     justify-content: center;
 }
 
-.product-card {
-    max-width: 250px; /* Keeps size uniform */
-}
-
 /* Footer */
 footer {
     background: #222;
@@ -203,5 +187,3 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
-
-
