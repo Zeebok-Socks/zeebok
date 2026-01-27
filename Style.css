@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    color: #333;
+    color: #b5a3a3;
 }
 
 .container {
@@ -44,7 +44,7 @@ body {
 
 /* Logo image */
 .logo-img {
-    height: 60px;
+    height: 80px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -54,7 +54,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin: 0;
     padding: 0;
 }
