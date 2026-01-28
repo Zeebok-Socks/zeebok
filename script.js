@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
 
     autoplay: {
-      delay: 2000,
+      delay: 2000, // ✅ 2 seconds auto slide
       disableOnInteraction: false,
     },
+
+    speed: 800, // smooth transition speed
 
     pagination: {
       el: ".swiper-pagination",
