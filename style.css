@@ -35,7 +35,8 @@ body {
 }
 
 .logo-img {
-  height: 60px;
+  height: 80px;
+  width:  50px;
 }
 
 .nav-links {
@@ -119,5 +120,5 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
   .nav-flex { flex-direction: column; gap: 10px; }
-  .logo-img { height: 50px; }
+  .logo-img { height: 70px; }
 }
