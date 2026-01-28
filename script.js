@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
 
     autoplay: {
-      delay: 2s,
+      delay: 2000,
       disableOnInteraction: false,
     },
 
